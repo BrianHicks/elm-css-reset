@@ -8,5 +8,5 @@ let
 in with nixpkgs;
 stdenv.mkDerivation {
   name = "elm-css-reset";
-  buildInputs = [ niv.niv git elmPackages.elm elmPackages.elm-format elmPackages.elm-test ];
+  buildInputs = [ niv.niv git elmPackages.elm elmPackages.elm-format ];
 }
