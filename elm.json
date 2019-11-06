@@ -1,0 +1,17 @@
+{
+    "type": "package",
+    "name": "BrianHicks/elm-css-reset",
+    "summary": "CSS Resets for rtfeldman/elm-css",
+    "license": "BSD-3-Clause",
+    "version": "1.0.0",
+    "expose-modules": [
+      "Css.Reset"
+    ],
+    "elm-version": "0.19.1 <= v < 0.20.0",
+    "dependencies": {
+      "elm/core": "1.0.2 <= v < 2.0.0",
+      "rtfeldman/elm-css": "16.0.0 <= v < 17.0.0"
+    },
+    "test-dependencies": {
+    }
+}
