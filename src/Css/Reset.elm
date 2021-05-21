@@ -159,3 +159,35 @@ borderBoxV201408 =
             , after [ boxSizing inherit ]
             ]
         ]
+
+
+sanitizeBeforeAfterStyles =
+    [ boxSizing borderBox, backgroundRepeat noRepeat, textDecoration inherit, property "vertical-align" "inherit" ]
+
+
+{-| The Sanitize CSS reset (12.0.1, public domain), converted to elm-css
+
+See <https://github.com/csstools/sanitize.css/releases/tag/12.0.1> for more.
+
+-}
+sanitize : Html msg
+sanitize =
+    global
+        [ everything
+            [ boxSizing borderBox
+            , backgroundRepeat noRepeat
+            , before sanitizeBeforeAfterStyles
+            , after sanitizeBeforeAfterStyles
+            ]
+        , html
+            [ cursor default
+            , property "line-height" (String.fromFloat 1.5)
+            , property "tab-size" (String.fromInt 4)
+            , property "-moz-tab-size" (String.fromInt 4)
+            , property "-webkit-tap-highlight-color" "transparent"
+            , property "-webkit-tap-highlight-color" "transparent"
+            , property "-ms-text-size-adjust" "100%"
+            , property "-webkit-text-size-adjust" "100%"
+            , property "word-break" "break-word"
+            ]
+        ]
