@@ -3,7 +3,7 @@
     "name": "BrianHicks/elm-css-reset",
     "summary": "CSS Resets for rtfeldman/elm-css",
     "license": "BSD-3-Clause",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "exposed-modules": [
         "Css.Reset"
     ],
